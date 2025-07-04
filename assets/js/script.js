@@ -1,6 +1,60 @@
 'use strict';
 
+// typing animation
+const typingText = document.querySelector('.title');
+const titles = ['Master\'s Student', 'Aspiring Developer', 'Problem Solver', 'Tech Enthusiast'];
+let titleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
+function typeWriter() {
+  const currentTitle = titles[titleIndex];
+  
+  if (isDeleting) {
+    typingText.textContent = currentTitle.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    typingText.textContent = currentTitle.substring(0, charIndex + 1);
+    charIndex++;
+  }
+  
+  if (!isDeleting && charIndex === currentTitle.length) {
+    setTimeout(() => { isDeleting = true; }, 1500);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    titleIndex = (titleIndex + 1) % titles.length;
+  }
+  
+  const speed = isDeleting ? 50 : 100;
+  setTimeout(typeWriter, speed);
+}
+
+// Start typing animation when page loads
+window.addEventListener('load', () => {
+  setTimeout(typeWriter, 1000);
+});
+
+// Animate skill progress bars when they come into view
+const observerOptions = {
+  threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const progressBars = entry.target.querySelectorAll('.skill-progress-fill');
+      progressBars.forEach(bar => {
+        bar.style.animation = 'fillProgress 2s ease-in-out forwards';
+      });
+    }
+  });
+}, observerOptions);
+
+// Observe skills section
+const skillsSection = document.querySelector('.skill');
+if (skillsSection) {
+  observer.observe(skillsSection);
+}
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }

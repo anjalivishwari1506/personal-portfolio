@@ -111,6 +111,65 @@
 
 }
 
+/* Custom animations */
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress-width);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-item {
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.service-item:nth-child(1) { animation-delay: 0.1s; }
+.service-item:nth-child(2) { animation-delay: 0.2s; }
+.service-item:nth-child(3) { animation-delay: 0.3s; }
+.service-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Hover effects */
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-3);
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+.project-item:hover {
+  transform: scale(1.02);
+}
+
+/* Typing cursor effect */
+.title::after {
+  content: '|';
+  color: var(--orange-yellow-crayola);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+}
+
 
 
 
@@ -865,7 +924,16 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
+  width: 0%;
+  transition: width 2s ease-in-out;
 }
+
+.skills-item:nth-child(1) .skill-progress-fill { --progress-width: 75%; }
+.skills-item:nth-child(2) .skill-progress-fill { --progress-width: 80%; }
+.skills-item:nth-child(3) .skill-progress-fill { --progress-width: 70%; }
+.skills-item:nth-child(4) .skill-progress-fill { --progress-width: 65%; }
+.skills-item:nth-child(5) .skill-progress-fill { --progress-width: 85%; }
+.skills-item:nth-child(6) .skill-progress-fill { --progress-width: 75%; }
 
 
 
