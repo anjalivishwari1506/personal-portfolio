@@ -1986,7 +1986,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 25px;
   }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 150px; }
 
   .info-content .name {
     white-space: nowrap;
