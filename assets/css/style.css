@@ -95,7 +95,7 @@
   /**
    * shadow
    */
-  
+
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.12);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.12);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.12);
@@ -1121,8 +1121,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
-  --scale: 1;
+.project-item > a:hover .project-item-icon-box {--scale: 1;
   opacity: 1;
 }
 
@@ -1779,7 +1778,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+
 }
 
 
@@ -1955,14 +1954,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-width: 1200px;
     margin-inline: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: stretch;
     gap: 25px;
   }
 
   .main-content {
-    min-width: 75%;
-    width: 75%;
+    width: 100%;
     margin: 0;
   }
 
@@ -1973,34 +1972,44 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    position: sticky;
-    top: 60px;
-    max-height: max-content;
-    height: 100%;
-    margin-bottom: 0;
-    padding-top: 60px;
+    position: static;
+    max-height: none;
+    height: auto;
+    margin-bottom: 25px;
+    padding: 30px;
     z-index: 1;
   }
 
-  .sidebar-info { flex-direction: column; }
+  .sidebar-info { 
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 120px; }
 
   .info-content .name {
     white-space: nowrap;
-    text-align: center;
+    text-align: left;
   }
 
-  .info-content .title { margin: auto; }
+  .info-content .title { margin: 0; }
 
   .info_more-btn { display: none; }
 
   .sidebar-info_more {
     opacity: 1;
     visibility: visible;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
   }
 
-  .contacts-list { grid-template-columns: 1fr; }
+  .contacts-list { 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
@@ -2014,18 +2023,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .separator:last-of-type {
-    margin: 15px 0;
-    opacity: 0;
+    display: none;
   }
 
-  .social-list { justify-content: center; }
-
-
-
-  /**
-	 * RESUME
-	 */
-
-  .timeline-text { max-width: 700px; }
+  .social-list { 
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
 
 }
