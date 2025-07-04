@@ -642,43 +642,71 @@ main {
 
 
 /**
- * #testimonials 
+ * #achievements 
  */
 
-.testimonials { margin-bottom: 30px; }
+.achievements { margin-bottom: 30px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.achievements-title { margin-bottom: 20px; }
 
-.testimonials-list {
+.achievements-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.achievement-item .content-card {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
   gap: 15px;
-  margin: 0 -15px;
-  padding: 25px 15px;
-  padding-bottom: 35px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
+  padding: 20px;
 }
 
-.testimonials-item {
-  min-width: 100%;
-  scroll-snap-align: center;
-}
-
-.testimonials-avatar-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(15px, -25px);
-  background: var(--bg-gradient-onyx);
-  border-radius: 14px;
+.achievement-icon-box {
+  background: var(--border-gradient-onyx);
+  min-width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange-yellow-crayola);
+  font-size: 20px;
   box-shadow: var(--shadow-1);
+  position: relative;
+  z-index: 1;
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.achievement-icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-title {
+  color: var(--white-2);
+  margin-bottom: 8px;
+}
+
+.achievement-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.achievement-year {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
 
 .testimonials-text {
   color: var(--light-gray);
