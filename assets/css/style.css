@@ -50,8 +50,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(45, 50%, 55%), 
+    hsl(35, 45%, 50%)
   );
 
   /* solid */
@@ -63,11 +63,11 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --orange-yellow-crayola: hsl(45, 60%, 55%);
+  --vegas-gold: hsl(45, 35%, 45%);
+  --light-gray: hsl(0, 0%, 70%);
+  --light-gray-70: hsla(0, 0%, 70%, 0.6);
+  --bittersweet-shimmer: hsl(0, 25%, 40%);
 
   /**
    * typography
@@ -96,11 +96,11 @@
    * shadow
    */
   
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.12);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.12);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.12);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.08);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.12);
 
   /**
    * transition
@@ -144,16 +144,16 @@
 
 /* Hover effects */
 .service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-3);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
 }
 
 .timeline-item:hover {
-  transform: translateX(5px);
+  transform: translateX(2px);
 }
 
 .project-item:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 /* Typing cursor effect */
@@ -544,11 +544,11 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
-  backdrop-filter: blur(10px);
+  background: hsla(240, 1%, 17%, 0.6);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-1);
   z-index: 5;
 }
 
@@ -954,12 +954,12 @@ main {
   transition: width 2s ease-in-out;
 }
 
-.skills-item:nth-child(1) .skill-progress-fill { --progress-width: 75%; }
-.skills-item:nth-child(2) .skill-progress-fill { --progress-width: 80%; }
-.skills-item:nth-child(3) .skill-progress-fill { --progress-width: 70%; }
-.skills-item:nth-child(4) .skill-progress-fill { --progress-width: 65%; }
-.skills-item:nth-child(5) .skill-progress-fill { --progress-width: 85%; }
-.skills-item:nth-child(6) .skill-progress-fill { --progress-width: 75%; }
+.skills-item:nth-child(1) .skill-progress-fill { --progress-width: 70%; }
+.skills-item:nth-child(2) .skill-progress-fill { --progress-width: 75%; }
+.skills-item:nth-child(3) .skill-progress-fill { --progress-width: 65%; }
+.skills-item:nth-child(4) .skill-progress-fill { --progress-width: 60%; }
+.skills-item:nth-child(5) .skill-progress-fill { --progress-width: 80%; }
+.skills-item:nth-child(6) .skill-progress-fill { --progress-width: 70%; }
 
 
 
@@ -1074,7 +1074,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.3); }
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1107,7 +1107,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img { transform: scale(1.1); }
+.project-item > a:hover img { transform: scale(1.05); }
 
 .project-title,
 .project-category { margin-left: 10px; }
@@ -1174,7 +1174,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.05); }
 
 .blog-content { padding: 15px; }
 
