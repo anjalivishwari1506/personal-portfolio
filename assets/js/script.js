@@ -1,5 +1,27 @@
 'use strict';
 
+// Preloader functionality
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  const body = document.body;
+  
+  // Remove loading class from body
+  body.classList.remove('loading');
+  
+  // Hide preloader after a short delay
+  setTimeout(() => {
+    preloader.classList.add('fade-out');
+    
+    // Remove preloader from DOM after animation
+    setTimeout(() => {
+      preloader.remove();
+    }, 500);
+  }, 1500); // Show preloader for 1.5 seconds
+});
+
+// Add loading class to body initially
+document.body.classList.add('loading');
+
 // typing animation
 const typingText = document.querySelector('.title');
 const titles = ['Master\'s Student', 'Aspiring Developer', 'Problem Solver', 'Tech Enthusiast'];

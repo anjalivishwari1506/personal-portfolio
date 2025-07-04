@@ -27,6 +27,11 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
+    - lottie player
+  -->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+  <!--
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +40,20 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 </head>
 
 <body>
+
+  <!--
+    - #PRELOADER
+  -->
+  <div class="preloader" id="preloader">
+    <dotlottie-player 
+      src="https://lottie.host/270a0b37-8674-485f-8afa-5b8a04b3531b/2UYtJZK1Hs.lottie" 
+      background="transparent" 
+      speed="1" 
+      style="width: 300px; height: 300px" 
+      loop 
+      autoplay>
+    </dotlottie-player>
+  </div>
 
   <!--
     - #MAIN
