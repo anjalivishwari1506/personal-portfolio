@@ -1816,7 +1816,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar, article {
     width: 950px;
     box-shadow: var(--shadow-5);
-    min-height: 400px;
   }
 
 
@@ -1959,13 +1958,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: flex-start;
     align-items: stretch;
     gap: 25px;
-    min-height: 100vh;
   }
 
   .main-content {
     width: 100%;
     margin: 0;
-    flex: 1;
   }
 
 
@@ -1976,16 +1973,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar {
     position: static;
-    min-height: 350px;
+    max-height: 400px;
     height: auto;
     width: 100%;
     max-width: 1400px;
     margin-bottom: 25px;
     padding: 30px;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .sidebar-info { 
