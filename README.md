@@ -97,9 +97,9 @@ You can also open it with **Live Server** in VS Code.
 
 ## 🌐 Connect with Me
 
-* 🔗 [LinkedIn](https://linkedin.com/in/anjalivishwari)
+* 🔗 [LinkedIn](https://linkedin.com/in/anjalivishwari1506)
 * 💻 [GitHub](https://github.com/anjalivishwari)
-* 🐦 [Twitter](https://twitter.com/anjalivishwari)
+* 🐦 [Twitter](https://twitter.com/vishwari_anjali)
 * 📧 Email: [anjalivishwari@gmail.com](mailto:anjalivishwari@gmail.com)
 
 ---
@@ -120,7 +120,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ```
 
----
-
-Would you like the `LICENSE` file and `CNAME` for custom domain setup as well?
-```
