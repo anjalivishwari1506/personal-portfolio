@@ -1,1139 +1,514 @@
-<!--
-
-
-Hit RUN to see this project in action!
-
-Feel free to edit the HTML and CSS to make it your own. You can also check the README.md file to know more.
-
-
--->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali Vishwari - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - lottie player
-  -->
-  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-  <!--
-    - #PRELOADER
-  -->
-  <div class="preloader" id="preloader">
-    <dotlottie-player src="https://lottie.host/270a0b37-8674-485f-8afa-5b8a04b3531b/2UYtJZK1Hs.lottie"
-      background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay>
-    </dotlottie-player>
-  </div>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-2.png" alt="Anjali Vishwari" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Anjali Vishwari">Anjali Vishwari</h1>
-
-          <p class="title">Master's Student & Aspiring Developer</p>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="spinner"></div>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:anjali.vishwari@example.com" class="contact-link">anjali.vishwari@example.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919876543210" class="contact-link">+91 8225911351</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 15, 2004</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Chandigarh, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/anjalivishwari" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://linkedin.com/in/anjalivishwari" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/anjalivishwari" class="social-link" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a passionate Master's student specializing in Computer Science/Technology with a strong foundation in
-            programming, web development, and emerging technologies. As a fresher, I'm eager to apply my academic
-            knowledge to real-world projects and contribute to innovative solutions.
-          </p>
-
-          <p>
-            My goal is to leverage my technical skills and fresh perspective to create meaningful applications that
-            solve real problems. I'm particularly interested in web development, software engineering, and staying
-            updated with the latest industry trends. I'm actively seeking opportunities to grow as a developer and make
-            a positive impact in the tech industry.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I'm Learning & Building</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Frontend Development</h4>
-
-                <p class="service-item-text">
-                  Building responsive and interactive web applications using modern frameworks and libraries.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend Development</h4>
-
-                <p class="service-item-text">
-                  Learning server-side technologies and database management for full-stack applications.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Problem Solving</h4>
-
-                <p class="service-item-text">
-                  Developing algorithmic thinking and data structures knowledge through coding challenges.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Research & Innovation</h4>
-
-                <p class="service-item-text">
-                  Exploring emerging technologies and contributing to academic research projects.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - achievements & certifications
-        -->
-
-        <section class="achievements">
-
-          <h3 class="h3 achievements-title">Achievements & Certifications</h3>
-
-          <ul class="achievements-list">
-
-            <li class="achievement-item">
-              <div class="content-card">
-
-                <div class="achievement-icon-box">
-                  <ion-icon name="trophy-outline"></ion-icon>
-                </div>
-
-                <div class="achievement-content">
-                  <h4 class="h4 achievement-title">Academic Excellence</h4>
-                  <p class="achievement-description">
-                    Maintained high GPA throughout academic career with distinction in core computer science subjects.
-                  </p>
-                  <span class="achievement-year">2023 - Present</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="achievement-item">
-              <div class="content-card">
-
-                <div class="achievement-icon-box">
-                  <ion-icon name="code-slash-outline"></ion-icon>
-                </div>
-
-                <div class="achievement-content">
-                  <h4 class="h4 achievement-title">Hackathon Participation</h4>
-                  <p class="achievement-description">
-                    Active participant in multiple coding competitions and hackathons, showcasing problem-solving
-                    skills.
-                  </p>
-                  <span class="achievement-year">2022 - 2024</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="achievement-item">
-              <div class="content-card">
-
-                <div class="achievement-icon-box">
-                  <ion-icon name="library-outline"></ion-icon>
-                </div>
-
-                <div class="achievement-content">
-                  <h4 class="h4 achievement-title">Research Publication</h4>
-                  <p class="achievement-description">
-                    Contributing to academic research projects and working towards publishing research papers in
-                    technology domain.
-                  </p>
-                  <span class="achievement-year">2024</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="achievement-item">
-              <div class="content-card">
-
-                <div class="achievement-icon-box">
-                  <ion-icon name="school-outline"></ion-icon>
-                </div>
-
-                <div class="achievement-content">
-                  <h4 class="h4 achievement-title">Online Certifications</h4>
-                  <p class="achievement-description">
-                    Completed various online courses in web development, data structures, and modern programming
-                    frameworks.
-                  </p>
-                  <span class="achievement-year">2023 - 2024</span>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Master's in Computer Science/Technology</h4>
-
-              <span>2023 — Present</span>
-
-              <p class="timeline-text">
-                Currently pursuing advanced studies in computer science with focus on software development, algorithms,
-                and emerging technologies. Maintaining excellent academic performance while working on research
-                projects.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bachelor's in Computer Science/Engineering</h4>
-
-              <span>2019 — 2023</span>
-
-              <p class="timeline-text">
-                Completed undergraduate studies with strong foundation in programming, data structures, software
-                engineering, and mathematics. Participated in various technical projects and hackathons.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Higher Secondary Education</h4>
-
-              <span>2017 — 2019</span>
-
-              <p class="timeline-text">
-                Completed 12th grade with focus on Mathematics, Physics, and Chemistry. Developed strong analytical and
-                problem-solving skills that form the foundation for technical education.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Research Assistant</h4>
-
-              <span>2024 — Present</span>
-
-              <p class="timeline-text">
-                Working on research projects under faculty guidance, contributing to academic publications and gaining
-                hands-on experience with cutting-edge technologies and methodologies.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Summer Internship</h4>
-
-              <span>Summer 2023</span>
-
-              <p class="timeline-text">
-                Completed internship at a technology company, gaining practical experience in software development,
-                working with teams, and understanding industry best practices.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Academic Projects</h4>
-
-              <span>2019 — Present</span>
-
-              <p class="timeline-text">
-                Developed multiple academic and personal projects including web applications, mobile apps, and research
-                implementations. Participated in hackathons and coding competitions.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript/TypeScript</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">React/Node.js</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Database Management</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Structures & Algorithms</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Version Control (Git)</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="e-commerce website" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">E-Commerce Platform</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="task management app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Management System</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="weather app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Weather Forecast App</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="portfolio website" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Personal Portfolio</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
     </div>
 
-  </main>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h2>Anjali<span class="highlight">.</span></h2>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Available for Work</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="highlight">Anjali Vishwari</span><br>
+                            <span class="typing-text"></span>
+                        </h1>
+                        <p class="hero-description">
+                            A passionate Master's student specializing in Computer Science with expertise in modern web technologies. 
+                            I create digital experiences that combine beautiful design with powerful functionality.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary">
+                                <i class="fas fa-briefcase"></i>
+                                View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-phone"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <h3>15+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>5+</h3>
+                                <p>Technologies</p>
+                            </div>
+                            <div class="stat">
+                                <h3>100%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="./assets/images/avatar-2.png" alt="Anjali Vishwari">
+                            <div class="floating-elements">
+                                <div class="floating-card card-1">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="floating-card card-2">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="floating-card card-3">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get to Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="./assets/images/avatar-2.png" alt="About Anjali">
+                        <div class="experience-badge">
+                            <h3>2+</h3>
+                            <p>Years of<br>Experience</p>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>I'm a Master's Student & Aspiring Developer</h3>
+                        <p>
+                            I'm passionate about creating digital solutions that make a difference. Currently pursuing my 
+                            Master's degree in Computer Science, I combine academic knowledge with practical experience 
+                            to build innovative applications.
+                        </p>
+                        <p>
+                            My journey in technology started with curiosity and has evolved into a deep passion for 
+                            problem-solving through code. I specialize in web development, with expertise in modern 
+                            frameworks and emerging technologies.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="label">Name:</span>
+                                <span class="value">Anjali Vishwari</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Email:</span>
+                                <span class="value">anjali.vishwari@example.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Phone:</span>
+                                <span class="value">+91 8225911351</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Location:</span>
+                                <span class="value">Chandigarh, India</span>
+                            </div>
+                        </div>
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-download"></i>
+                                Download CV
+                            </a>
+                            <div class="social-links">
+                                <a href="https://github.com/anjalivishwari" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/anjalivishwari" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/anjalivishwari" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Do</span>
+                    <h2 class="section-title">My Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Creating responsive and interactive user interfaces using modern frameworks like React, Vue.js, and Angular.</p>
+                        <div class="service-tech">
+                            <span>React</span>
+                            <span>Vue.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Building robust server-side applications and APIs using Node.js, Python, and modern databases.</p>
+                        <div class="service-tech">
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Developing cross-platform mobile applications using React Native and Flutter frameworks.</p>
+                        <div class="service-tech">
+                            <span>React Native</span>
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Implementing machine learning solutions and AI algorithms for data analysis and automation.</p>
+                        <div class="service-tech">
+                            <span>TensorFlow</span>
+                            <span>Scikit-learn</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Skills Section -->
+        <section class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>JavaScript/TypeScript</h4>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Python</h4>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>React/Node.js</h4>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Database Management</h4>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>Machine Learning</h4>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h4>DevOps</h4>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Latest Projects</h2>
+                </div>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="./assets/images/project-1.jpg" alt="E-Commerce Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>E-Commerce Platform</h3>
+                                    <p>Full-stack e-commerce solution with React and Node.js</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Web Development</span>
+                            <h3>E-Commerce Platform</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img src="./assets/images/project-2.png" alt="Task Management App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Task Management App</h3>
+                                    <p>Cross-platform mobile app built with React Native</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Mobile Development</span>
+                            <h3>Task Management App</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <img src="./assets/images/project-3.jpg" alt="Weather Prediction AI">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Weather Prediction AI</h3>
+                                    <p>Machine learning model for weather forecasting</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">AI/ML</span>
+                            <h3>Weather Prediction AI</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="./assets/images/project-4.png" alt="Portfolio Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Portfolio Website</h3>
+                                    <p>Modern portfolio website with animations</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Web Development</span>
+                            <h3>Portfolio Website</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Chandigarh, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 8225911351</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>anjali.vishwari@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Anjali Vishwari. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/anjalivishwari" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/anjalivishwari" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/anjalivishwari" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
