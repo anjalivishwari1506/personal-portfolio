@@ -3,7 +3,7 @@
 
 // Global variables
 let currentTheme = 'light';
-const typingTexts = ['Frontend Developer', 'Backend Developer', 'Full Stack Developer', 'Problem Solver'];
+const typingTexts = ['AI & ML Developer', 'Data Visualization Specialist', 'Flask Web App Creator', 'Dashboard Designer', 'Problem Solver'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
