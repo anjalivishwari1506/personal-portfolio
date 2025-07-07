@@ -305,8 +305,9 @@ body {
 .typing-text {
     color: var(--secondary-color);
     display: inline-block;
-    min-height: 1.8em;
+    min-height: 2.5em;
     line-height: 1.2;
+    vertical-align: top;
 }
 
 .hero-description {
